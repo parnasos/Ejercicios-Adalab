@@ -1,0 +1,14 @@
+.foto {
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+.imagenbox {
+  height: 100px;
+  width: 100px;
+  border: 5px coral solid;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: green;
+}

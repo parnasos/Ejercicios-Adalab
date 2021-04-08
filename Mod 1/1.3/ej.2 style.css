@@ -1,0 +1,18 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border: 3px solid aqua;
+}
+
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
