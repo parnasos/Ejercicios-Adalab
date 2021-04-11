@@ -1,0 +1,53 @@
+.container {
+  width: 100vw;
+  border: 3px solid black;
+  margin: 3px;
+  background-color: lightgrey;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.resto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.noticia1 {
+  width: 49%;
+  border: 2px solid rgb(102, 114, 106);
+  text-align: center;
+  margin: 0;
+}
+
+.noticia2 {
+  width: 49%;
+  border: 2px solid rgb(3, 117, 37);
+  text-align: center;
+  margin: 0;
+}
+
+.noticia3 {
+  width: 49%;
+  border: 2px solid rgb(3, 117, 37);
+  text-align: center;
+}
+
+.noticia4 {
+  width: 49%;
+  border: 2px solid rgb(3, 117, 37);
+  text-align: center;
+}
+
+.noticia5 {
+  width: 45%;
+  border: 2px solid rgb(3, 117, 37);
+  text-align: center;
+  flex-grow: 2;
+  order: -1;
+}
