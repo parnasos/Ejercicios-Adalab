@@ -1,0 +1,13 @@
+.container {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  margin: 6px;
+  list-style-type: none;
+}
+li {
+  margin: 6px;
+}

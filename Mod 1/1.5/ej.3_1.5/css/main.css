@@ -1,0 +1,14 @@
+.Header {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background-color: darkmagenta;
+  display: block;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+.texto {
+  position: relative;
+  top: 50px;
+}
