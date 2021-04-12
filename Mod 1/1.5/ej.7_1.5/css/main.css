@@ -1,0 +1,11 @@
+.container {
+  background-color: cornflowerblue;
+  margin: 20px auto;
+  border: dotted 5px red;
+  padding: 15px;
+  max-width: 600px;
+  width: 86vw;
+}
+.texto {
+  text-align: center;
+}
