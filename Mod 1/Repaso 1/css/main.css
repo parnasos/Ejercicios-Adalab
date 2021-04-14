@@ -1,3 +1,8 @@
+* {
+  font-family: "montserrat";
+}
+
+
 .texto {
   height: 100vh;
   display: flex;
