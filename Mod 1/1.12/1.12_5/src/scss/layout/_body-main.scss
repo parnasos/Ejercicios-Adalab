@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+.mail,
+.password {
+  width: 450px;
+  height: 45px;
+  margin: 10px;
+  color: #e6e6e6;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.buttom {
+  width: 450px;
+  height: 45px;
+  background-color: darkcyan;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px;
+  border-color: white;
+}

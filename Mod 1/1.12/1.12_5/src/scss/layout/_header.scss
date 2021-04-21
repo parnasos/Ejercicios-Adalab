@@ -1,0 +1,23 @@
+.page__header {
+  @media all and (min-width: 768px) {
+    height: 100px;
+  }
+  @media all and (min-width: 1280px) {
+    height: 110px;
+  }
+}
+.title_1 {
+  text-align: center;
+  color: #009588;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+}
+.title_2 {
+  text-align: center;
+  color: solid black;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+}
