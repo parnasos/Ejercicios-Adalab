@@ -1,13 +1,21 @@
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid rgba($color: #f5f5f5, $alpha: 0.8);
+
   @media all and (min-width: 768px) {
-    height: 100px;
   }
   @media all and (min-width: 1280px) {
-    height: 110px;
   }
 }
 
 .header-pic {
   width: 150px;
   height: 75px;
+}
+
+.header__title {
+  padding: 15px;
 }
