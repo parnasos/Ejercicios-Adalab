@@ -1,5 +1,46 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px;
+}
+
+.section__1,
+.article {
+  padding: 5px;
+  margin: 10px;
+}
+.p-title,
+.p-text {
+  margin: 10px 0;
+}
+
 .autor-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.section__2 {
+  display: flex;
+}
+.article-autor,
+.navs {
+  width: 50%;
+  margin: auto;
+}
+.navs {
+  text-align: center;
+  margin-top: 0;
+}
+
+.list__sec,
+.list__categ {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+.list__sec {
+  top: 0;
 }
