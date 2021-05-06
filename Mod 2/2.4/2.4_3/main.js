@@ -1,11 +1,12 @@
 'use strict';
 
-const sinIVA = 10;
-const IVA = sinIVA*0.21;
-const total= sinIVA+IVA;
+const result=document.querySelector(".text");
 
-function calculaIVA() {
-  return `Precio sin IVA: ${sinIVA}, IVA: ${IVA} y Total: ${total}`;
-  
+function calculaIVA(price) {
+    const IVA = price*0.21;
+  const total= price+ IVA;
+ 
+  result.innerHTML += `El precio es: ${price}, IVA: ${IVA} y Total: ${total}`;
 }
-console.log(calculaIVA());
+//const result = `El precio es: ${price}, IVA: ${IVA} y Total: ${total}`;
+calculaIVA(100);
