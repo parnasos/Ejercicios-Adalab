@@ -17,7 +17,8 @@ const result = number % 2;
 if (result===0) {
   return true;
 }
-  return false;
+  else {
+    return false;
 };
 
 
