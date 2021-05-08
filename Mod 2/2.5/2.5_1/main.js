@@ -1,16 +1,10 @@
 'use strict';
 
-//let query = document.querySelector(".query")
+const message = document.querySelector(".message");
+const button = document.querySelector(".button");
 
-function getEl(a) {
-    const result =document.querySelector(a);
-    if (result === null) {
-     console.log(`No existe ningún elemento con clase, id o tag llamado ${a}`);
-    }
-return result;
+button.addEventListener ("click", hiMessage);
 
+function hiMessage () {
+message.innerHTML = "Mi primer click, ¡ole yo y la mujer que me parió!";
 }
-
-const texto = getEl('x');
-
-console.log(texto);
