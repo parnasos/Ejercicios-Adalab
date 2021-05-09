@@ -1,0 +1,9 @@
+.button,
+.button2 {
+  width: 100px;
+}
+
+.buttonBG {
+  background-color: green;
+  color: antiquewhite;
+}
