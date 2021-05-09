@@ -1,7 +1,24 @@
-.bg1 {
-  background-color: red;
+body {
+  margin: 0;
+  font-family: Arial, san-serif;
 }
 
-.bg2 {
-  background-color: purple;
+.teachers {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.teacher__img {
+  width: 200px;
+  height: auto;
+}
+
+.teacher--selected {
+  background-color: antiquewhite;
 }
