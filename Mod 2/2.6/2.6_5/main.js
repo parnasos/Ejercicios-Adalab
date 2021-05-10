@@ -1,4 +1,6 @@
-'use strict';
+
+
+ 'use strict';
 
 const text = document.querySelector(".text");
 

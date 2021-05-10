@@ -9,3 +9,4 @@ user.age = age+1;
 user.job = job;
 
 console.log(user)
+//console.log(`Hola mi nombre es ${user.firstname}`)
