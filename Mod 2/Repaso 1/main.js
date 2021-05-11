@@ -6,9 +6,6 @@ const backgroundBody = document.querySelector(".js-body")
 
 
  
-
- 
-
  function selectMood () {
      const moodSelected = faceSelected.value;
      if (moodSelected === "sad") {
@@ -20,24 +17,32 @@ title.innerHTML = ":("
  }
 
  function randomNumber () {
-     const number = Math.random() * (100 - 0) + 0;
-    return number
+     const number = Math.round(     Math.random() * 100    );
+    return number;
     
- };
-  
+ }
+  console.log(randomNumber())
 
-function selectNumber () {
-    const number = randomNumber();
+ const resetBG = () =>  {
+    backgroundBody.classList.remove("body");
+    backgroundBody.classList.remove("background2");
+    
+ } 
+const number = randomNumber();
+const selectNumber = (number) => {
     if (number %2 === 0) {
-backgroundBody.classList.remove("body");
-backgroundBody.classList.add("background2");
+backgroundBody.classList.add("body");
+
     }
-    else {}
+    else {
+    backgroundBody.classList.add("background2");
+    }
 }
 function refreshMood (event) {
     event.preventDefault();  
  selectMood ()
- randomNumber ()
+ //randomNumber ()
+ resetBG ()
  selectNumber ()
  }
 button.addEventListener("click", refreshMood);
