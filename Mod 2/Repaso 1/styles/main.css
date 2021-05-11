@@ -1,6 +1,9 @@
 .body {
   background-color: #ffcc00;
 }
+.background2 {
+  background-color: #ff9900;
+}
 .content {
   width: 100vw;
   height: 100vh;
