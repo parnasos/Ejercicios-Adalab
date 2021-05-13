@@ -41,7 +41,7 @@ backgroundBody.classList.add("body");
 function refreshMood (event) {
     event.preventDefault();  
  selectMood ()
- //randomNumber ()
+ randomNumber ()
  resetBG ()
  selectNumber ()
  }
