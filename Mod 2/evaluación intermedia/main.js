@@ -20,8 +20,7 @@ function getRandomNumber(max) {
 const numberRandom = getRandomNumber(100);
 console.log(numberRandom);
 
-const handleClick = (event) => {
-  event.preventDefault();
+const handleMsj = () => {
   const inputValue = parseInt(inputElement.value);
   console.log(inputElement.value);
 
@@ -34,7 +33,6 @@ const handleClick = (event) => {
   } else {
     msj.innerHTML = "Ganaste!";
   }
-  counter();
 };
 
 let cont = 0;
@@ -42,5 +40,11 @@ function counter() {
   cont++;
   console.log(cont);
   msjCounter.innerHTML = `El número de intentos es ${cont}`;
+}
+
+function handleClick(event) {
+  event.preventDefault();
+  handleMsj();
+  counter();
 }
 btn.addEventListener("click", handleClick);
