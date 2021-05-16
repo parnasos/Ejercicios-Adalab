@@ -14,7 +14,7 @@ function getProfile() {
         .then((reposData) => {
           for (const repo of reposData) {
             console.log(repo);
-            document.body.innerHTML += `<li>${repo.full_name}</li>`;
+            document.body.innerHTML += `<li>${repo.name}</li>`;
           }
         });
 
