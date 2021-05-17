@@ -15,7 +15,7 @@ const list = document.querySelector(".js-list");
 
 const tasks = [
   { name: "Recoger setas en el campo", completed: true },
-  { name: "Comprar pilas", completed: true },
+  { name: "Comprar pilas", completed: false },
   { name: "Poner una lavadora de blancos", completed: true },
   {
     name: "Aprender cómo se realizan las peticiones al servidor en JavaScript",
@@ -23,6 +23,53 @@ const tasks = [
   },
 ];
 
+function renderTasks() {
+  /*
+for (let i = 0; i < tasks.length; i++) {
+  const taskToPrint = tasks[i];
+  list.innerHTML += `<li>${taskToPrint.name}</li>`;
+}
+*/
+  list.innerHTML = ``;
+  for (let i = 0; i < tasks.length; i++) {
+    const eachTask = tasks[i];
+    /*
+  if (eachTask.completed === true) {
+    list.innerHTML += `<li class="taskDone">${eachTask.name}</li>`;
+  } else {
+    list.innerHTML += `<li>${eachTask.name}</li>`;
+  }*/
+
+    let classOrNot = ``;
+
+    if (eachTask.completed) {
+      classOrNot = `taskDone`;
+    }
+
+    const newTask = `<li id="${i}" class="js-task ${classOrNot}">${eachTask.name}</li>`;
+    list.innerHTML += newTask;
+  }
+
+  const liList = document.querySelectorAll(".js-task");
+
+  for (const li of liList) {
+    li.addEventListener("click", handleClick);
+  }
+}
+
+renderTasks();
+
+function handleClick(event) {
+  const liClicked = event.target;
+  const taskIndex = liClicked.id;
+
+  tasks[taskIndex].completed = !tasks[taskIndex].completed;
+
+  //liClicked.classList.toggle("taskDone");
+  renderTasks();
+}
+
+/*
 function paintTasks() {
   let html = "";
   let className = "";
@@ -56,3 +103,4 @@ function handlerCheck(evt) {
   paintTasks();
 }
 paintTasks();
+*/
