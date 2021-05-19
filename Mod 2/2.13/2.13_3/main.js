@@ -10,7 +10,7 @@ const users = [
 
 const makeSayHi = users.map((user) => {
   if (user.isPremium === true) {
-    return `Bienvenida ${user.name}. Gracias por confiar en nosotras.`;
+    return `Bienvenida ${user.name}. Gracias por confiar en nosotros.`;
   } else {
     return `Bienvenida ${user.name}`;
   }
