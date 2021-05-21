@@ -1,10 +1,13 @@
-"use strict";
-let counter = -2;
+let counter = 1;
 
 const incrementAndShowCounter = () => {
   counter++;
   const time = document.querySelector(".time");
-  time.innerHTML = counter;
+  if (counter < 60) {
+    time.innerHTML = `Escrito hace ${counter} segundos`;
+  } else if ((counter = 60)) {
+    time.innerHTML = `Escrito hace 1 minuto`;
+  }
 };
 
-setInterval(incrementAndShowCounter, 2000);
+setInterval(incrementAndShowCounter, 1000);
