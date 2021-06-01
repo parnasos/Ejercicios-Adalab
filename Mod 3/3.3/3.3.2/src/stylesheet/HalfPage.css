@@ -1,0 +1,8 @@
+.halfPage {
+  width: 50vw;
+  text-align: left;
+  display: inline;
+}
+.halfPage__text {
+  text-align: left;
+}

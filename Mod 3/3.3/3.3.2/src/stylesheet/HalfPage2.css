@@ -1,0 +1,10 @@
+.halfPage2 {
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  display: inline;
+}
+.halfPage2__text {
+  text-align: right;
+}
