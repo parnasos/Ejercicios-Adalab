@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import PropTypes from "prop-types";
 
 class App extends React.Component {
   render() {
@@ -56,7 +57,5 @@ class App extends React.Component {
     );
   }
 }
-//Extra del ejercicio 3 del 3.3
-students.defaultProps = { description: "No hay descripción" };
 
 export default App;
