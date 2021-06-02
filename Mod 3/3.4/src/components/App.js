@@ -3,11 +3,12 @@ import "../stylesheets/App.css";
 //import PropTypes from "prop-types";
 //import { OnionHater } from "./OnionHater";
 //import { Destiny } from "./Destiny";
-import { OnionHater2 } from "./OnionHater2";
+//import { OnionHater2 } from "./OnionHater2";
+import { Destiny2 } from "./Destiny2";
 
 class App extends React.Component {
   render() {
-    return <OnionHater2 />;
+    return <Destiny2 />;
   }
 }
 
