@@ -1,3 +1,9 @@
+In this project yo should find diferent components, each of them appertain to an exercise of the lesson 3.4:
+
+Ex.1 => OnionHater
+Ex.2 => Destiny
+Ex.3 => OnionHater2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

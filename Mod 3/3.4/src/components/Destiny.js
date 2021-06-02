@@ -13,7 +13,7 @@ const cities = (
     <label for="cities">
       Qué destino eliges?
       <select ide="cities" name="cities" onChange={SelectCity}>
-        <option value="#" disabled>
+        <option value="1" disabled>
           Elige un destino
         </option>
         <option value="Buenos Aires">BBAA</option>
