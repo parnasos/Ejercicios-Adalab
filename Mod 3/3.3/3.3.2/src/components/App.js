@@ -1,18 +1,17 @@
 import React from "react";
-//import "../stylesheet/App.css";
+import "../stylesheet/App.css";
 import HalfPage from "./HalfPage";
-import HalfPage2 from "./HalfPage2";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <HalfPage title="Soy el título de la izquierda">
           <p> Estoy en la izquierda</p>
         </HalfPage>
-        <HalfPage2 title="Soy el título de la derecha">
+        <HalfPage title="Soy el título de la derecha">
           <p> Estoy en la derecha</p>
-        </HalfPage2>
+        </HalfPage>
       </div>
     );
   }
