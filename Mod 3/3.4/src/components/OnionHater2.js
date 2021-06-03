@@ -8,29 +8,29 @@ class OnionHater2 extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(ev) {
-    const label = document.querySelector(".textarea");
     if (ev.target.value.toLowerCase().includes("cebolla")) {
       this.isHating = true;
-      label.classList.add("alert");
     } else {
       this.isHating = false;
-      label.classList.remove("alert");
     }
+    this.forceUpdate();
   }
 
   render() {
-    const textarea = (
-      <label className="textarea">
-        Ojo a la cebolla
-        <input
-          id="comida"
-          type="textarea"
-          placeholder="Cebolla"
-          onChange={this.handleChange}
-        ></input>
-      </label>
+    const className = this.isHating === true ? "alert" : "textarea";
+    return (
+      <>
+        <label className={className}>
+          Ojo a la cebolla
+          <input
+            id="comida"
+            type="textarea"
+            placeholder="Cebolla"
+            onChange={this.handleChange}
+          ></input>
+        </label>
+      </>
     );
-    return textarea;
   }
 }
 
