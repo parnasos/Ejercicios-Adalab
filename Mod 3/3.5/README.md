@@ -1,6 +1,6 @@
 In this project yo should find diferent components, each of them appertain to an exercise of the lesson 3.4:
 
-Ex.1 =>
+Ex.1 => Text
 Ex.2 =>
 Ex.3 =>
 ex.4 =>

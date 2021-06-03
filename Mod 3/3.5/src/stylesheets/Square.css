@@ -1,0 +1,18 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+}
+.red {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
