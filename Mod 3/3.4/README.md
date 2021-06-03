@@ -3,6 +3,7 @@ In this project yo should find diferent components, each of them appertain to an
 Ex.1 => OnionHater
 Ex.2 => Destiny
 Ex.3 => OnionHater2
+ex.4 => Destiny2
 
 # Getting Started with Create React App
 
