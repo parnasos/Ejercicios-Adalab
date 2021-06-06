@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Birthday from "./Birthday";
+import "../stylesheets/App.css";
 
 const App = () => {
   const [number, setNumber] = useState(20);

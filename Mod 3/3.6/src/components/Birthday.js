@@ -6,11 +6,14 @@ const Birthday = (props) => {
   };
 
   return (
-    <div>
-      <span>Hoy tengo {props.myAge} años de edad.</span>
-      <button type="button" onClick={getOlder}>
-        ¡Un año más!
-      </button>
+    <div className="body">
+      <span className="txt">Hoy tengo {props.myAge} años de edad.</span>
+      <input
+        className="btn"
+        type="submit"
+        onClick={getOlder}
+        value="¡Un año más!"
+      />
     </div>
   );
 };
