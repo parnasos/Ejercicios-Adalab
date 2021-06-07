@@ -14,7 +14,7 @@ class Clock extends React.Component {
 
   updateClock() {
     const dateUpdate = new Date();
-    this.setState(dateUpdate);
+    this.setState({ date: dateUpdate });
   }
   render() {
     return <h2>It is {this.state.date.toLocaleTimeString()}.</h2>;
