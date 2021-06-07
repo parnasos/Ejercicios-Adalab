@@ -1,11 +1,11 @@
 import React from "react";
 
 const Birthday2 = (props) => {
-  const getOlder = function () {
-    props.getOneMore();
+  const getOlder = function (ev) {
+    props.getOne(ev.target.id);
   };
-  const getMaterialistic = function () {
-    props.getOneMoreP();
+  const getMaterialistic = function (ev) {
+    props.getOne(ev.target.id);
   };
 
   return (
@@ -14,6 +14,7 @@ const Birthday2 = (props) => {
       <input
         className="btn"
         type="submit"
+        id="age"
         onClick={getOlder}
         value="¡Un año más!"
       />

@@ -11,18 +11,19 @@ const App = () => {
   const handleOneMore = () => {
     setNumber(generateOneMore());
   };
-  const handleOneMoreP = () => {
-    setPresent(generateOneMoreP());
+  const handleOneMoreP = () => {};
+
+  const handleOne = (inputID) => {
+    if (inputID === "age") {
+      setNumber(generateOneMore());
+    } else {
+      setPresent(generateOneMoreP());
+    }
   };
 
   return (
     <div className="App">
-      <Birthday2
-        getOneMore={handleOneMore}
-        myAge={number}
-        myPresents={present}
-        getOneMoreP={handleOneMoreP}
-      />
+      <Birthday2 myAge={number} myPresents={present} getOne={handleOne} />
     </div>
   );
 };
