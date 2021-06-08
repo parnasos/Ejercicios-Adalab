@@ -73,7 +73,7 @@ const FilmForm_ej3 = () => {
             name="audiance"
             value="A"
             checked={state.audiance === "A"}
-            onChange={handleChange}
+            onChange={handleAudiance}
             checked
           />
         </label>
@@ -84,7 +84,7 @@ const FilmForm_ej3 = () => {
             name="audiance"
             value="7"
             checked={state.level === "7"}
-            onChange={handleChange}
+            onChange={handleAudiance}
           />
         </label>
         <label>
@@ -94,7 +94,7 @@ const FilmForm_ej3 = () => {
             name="audiance"
             value="12"
             checked={state.level === "12"}
-            onChange={handleChange}
+            onChange={handleAudiance}
           />
         </label>
         <label>
@@ -104,7 +104,7 @@ const FilmForm_ej3 = () => {
             name="audiance"
             value="16"
             checked={state.level === "16"}
-            onChange={handleChange}
+            onChange={handleAudiance}
           />
         </label>
         <label>
@@ -114,7 +114,7 @@ const FilmForm_ej3 = () => {
             name="audiance"
             value="18"
             checked={state.level === "18"}
-            onChange={handleChange}
+            onChange={handleAudiance}
           />
         </label>
       </form>
