@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../stylesheets/App.css";
 
-const FilmForm = () => {
+const FilmForm_ej3 = () => {
   const [state, setState] = useState({
     firstName: "",
     description: "",
     Lenguage: "",
+    aundiance: "",
   });
   //   const handleChange = (event) => {
   //     const value = event.target.value;
@@ -30,6 +31,12 @@ const FilmForm = () => {
     setState({
       //...state,
       Lenguage: ev.target.value,
+    });
+  };
+  const handleAudiance = (ev) => {
+    setState({
+      //...state,
+      audiance: ev.target.value,
     });
   };
   return (
@@ -59,13 +66,65 @@ const FilmForm = () => {
           <option value="english">English</option>
         </select>
         <input type="submit" value="Enviar" />
+        <label>
+          A
+          <input
+            type="radio"
+            name="audiance"
+            value="A"
+            checked={state.audiance === "A"}
+            onChange={handleChange}
+            checked
+          />
+        </label>
+        <label>
+          7
+          <input
+            type="radio"
+            name="audiance"
+            value="7"
+            checked={state.level === "7"}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          12
+          <input
+            type="radio"
+            name="audiance"
+            value="12"
+            checked={state.level === "12"}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          16
+          <input
+            type="radio"
+            name="audiance"
+            value="16"
+            checked={state.level === "16"}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          18
+          <input
+            type="radio"
+            name="audiance"
+            value="18"
+            checked={state.level === "18"}
+            onChange={handleChange}
+          />
+        </label>
       </form>
 
       <p>Nombre:{state.firstName}</p>
       <p>Description:{state.description}</p>
       <p>Lenguage:{state.lenguage}</p>
+      <p>Audiance:{state.audiance}</p>
     </>
   );
 };
 
-export default FilmForm;
+export default FilmForm_ej3;
