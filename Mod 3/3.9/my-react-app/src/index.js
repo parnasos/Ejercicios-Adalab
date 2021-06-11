@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 import "./stylesheets/index.css";
-import App from "./App";
+import Applinkedin from "./Applinkedin";
 
 ReactDOM.render(
   <HashRouter>
-    <App />
+    <Applinkedin />
   </HashRouter>,
   document.getElementById("root")
 );
