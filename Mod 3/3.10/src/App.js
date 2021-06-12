@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import Counter from "./components/Counter";
+import CounterF from "./components/CounterF";
 import Menu from "./components/Menu";
 import Relax from "./components/Relax";
 import "./stylesheets/App.css";
@@ -20,7 +20,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/menu" component={Menu} />
-          <Route path="/counter" component={Counter} />
+          <Route path="/counter" component={CounterF} />
           <Route path="/relax" component={Relax} />
         </Switch>
       </main>
