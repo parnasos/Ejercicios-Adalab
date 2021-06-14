@@ -5,12 +5,18 @@ import GetApiData from "./services/GetApiData";
 import ls from "./services/local-storage";
 
 const App = () => {
-  const [users, setUsers] = useState([]);
+  const usersLocalStorage = ls.get("users", []); //el segundo parámetro corresponde a defaultData
+  const [users, setUsers] = useState(usersLocalStorage);
+  const [filterText, setFilterText] = useState(ls.get("filterText", ""));
+  const [filterGender, setFilterGender] = useState(ls.get("filterGender", ""));
+  const [filterCity, setFilterCity] = useState(ls.get("filterCity", ""));
 
   useEffect(() => {
-    GetApiData().then((userData) => {
-      setUsers(userData);
-    });
+    if (users.length === 0) {
+      GetApiData().then((userData) => {
+        setUsers(userData);
+      });
+    }
   }, []);
 
   useEffect(() => {
@@ -20,7 +26,8 @@ const App = () => {
   return (
     <>
       <div className="App">
-        <div className="title">Buscando Personas</div>
+        <h1 className="title">Buscando Personas</h1>
+        <Filters />
         <UserList users={users} />
       </div>
     </>

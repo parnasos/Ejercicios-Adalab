@@ -1,8 +1,9 @@
 //import React from "react";
 
-const get = (key) => {
+const get = (key, defaultData) => {
   localStorage.getItem(key);
   if (data === null) {
+    return defaultData;
   } else {
     return JSON.parse(data);
   }
@@ -11,7 +12,9 @@ const get = (key) => {
 const set = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
-export default {
+const LsToExport = {
   get: get,
   set: set,
 };
+
+export default LsToExport;
