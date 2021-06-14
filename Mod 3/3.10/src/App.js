@@ -4,6 +4,7 @@ import CounterF from "./components/CounterF";
 import Menu from "./components/Menu";
 import Relax from "./components/Relax";
 import "./stylesheets/App.css";
+//import Text from "./components/Text";
 
 function App() {
   return (
