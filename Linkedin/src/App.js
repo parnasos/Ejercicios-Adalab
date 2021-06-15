@@ -1,15 +1,17 @@
-import React, { useState } from "react";
-import { Link, Route, Switch } from "react-router-dom";
-import { useEffect } from "react/cjs/react.production.min";
+import React, { useState, useEffect } from "react";
+//import { Link, Route, Switch } from "react-router-dom";
+
 import GetApiData from "./services/GetApiData";
 import ls from "./services/local-storage";
+import Filters from "./components/Filters";
+import UserList from "./components/UserList";
 
 const App = () => {
   const usersLocalStorage = ls.get("users", []); //el segundo parámetro corresponde a defaultData
   const [users, setUsers] = useState(usersLocalStorage);
-  const [filterText, setFilterText] = useState(ls.get("filterText", ""));
-  const [filterGender, setFilterGender] = useState(ls.get("filterGender", ""));
-  const [filterCity, setFilterCity] = useState(ls.get("filterCity", ""));
+  // const [filterText, setFilterText] = useState(ls.get("filterText", ""));
+  //const [filterGender, setFilterGender] = useState(ls.get("filterGender", ""));
+  //const [filterCity, setFilterCity] = useState(ls.get("filterCity", ""));
 
   useEffect(() => {
     if (users.length === 0) {

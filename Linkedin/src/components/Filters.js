@@ -1,7 +1,7 @@
 import React from "react";
 import FilterN from "./FilterN";
 import FilterG from "./FilterG";
-import FilterC from "./FilterC";
+//import FilterC from "./FilterC";
 
 const Filters = (props) => {
   return (
@@ -9,7 +9,7 @@ const Filters = (props) => {
       <form>
         <FilterN />
         <FilterG />
-        <FilterC />
+        {/* <FilterC /> */}
       </form>
     </section>
   );

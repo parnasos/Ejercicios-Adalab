@@ -8,9 +8,9 @@ const UserList = (props) => {
   });
   return (
     <section>
-      <ul className="cards">
-        <UserElements />
-      </ul>
+      <ul className="cards">{userElements}</ul>
     </section>
   );
 };
+
+export default UserList;
