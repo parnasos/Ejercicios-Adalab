@@ -47,6 +47,7 @@ app.get("/response-c", (req, res) => {
 });
 
 app.get("/response-d", (req, res) => {
+  // more info about http status codes: https://developer.mozilla.org/es/docs/Web/HTTP/Status
   res.status(404).json({
     errorCode: "data-not-found",
     errorMessage: "Data not found",
