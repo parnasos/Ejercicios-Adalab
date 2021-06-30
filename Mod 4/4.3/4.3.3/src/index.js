@@ -14,7 +14,7 @@ app.listen(serverPort, () => {
   console.log(`App listening at http://localhost:${serverPort}`);
 });
 
-// endpoints, more info about express response: https://expressjs.com/es/api.html#res
+// endpoints, more info about express response: https://expressjs.com/es/api.html#res.Esto es una prueba
 
 app.get("/response-a", (req, res) => {
   res.json({ result: "ok" });

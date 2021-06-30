@@ -2,56 +2,29 @@ const express = require("express");
 const cors = require("cors");
 
 // create server
-const server = express();
+const app = express();
 
 // set express middleware
-server.use(express.json());
-server.use(cors());
+app.use(express.json());
+app.use(cors());
 
 // init express aplication
 const serverPort = 3000;
-server.listen(serverPort, () => {
-  console.log(`Server listening at http://localhost:${serverPort}`);
+app.listen(serverPort, () => {
+  console.log(`App listening at http://localhost:${serverPort}`);
 });
 
-// static server
-const staticServerPath = "./public";
-server.use(express.static(staticServerPath));
+// const order = orders.find((order) => (order.Id = 456));
+// console.log("Found order :", order);
 
-// users
+// endpoints, more info about express response: https://expressjs.com/es/api.html#res
 
-const users = []; // fake users data base
+// const users.id="123";
+// const orders.id="456";
 
-// api endpoints
-
-server.post("/user", (req, res) => {
-  console.log("Body params:", req.body);
-  console.log("Body param userName:", req.body.userName);
-  console.log("Body param userEmail:", req.body.userEmail);
-
-  // add new user to daba base
-  users.push({
-    name: req.body.userName,
-    email: req.body.userEmail,
-  });
-
-  res.json({
-    result: "User created",
-  });
-});
-
-server.post("/users", (req, res) => {
-  console.log("Body params:", req.body);
-  console.log("Body param filterName:", req.body.filterByName);
-
-  const filterName = req.body.filterByName;
-  const filteredUsers = users.filter((user) => {
-    return filterName === ""
-      ? true
-      : user.name.toLowerCase().includes(filterName.toLowerCase());
-  });
-
-  res.json({
-    result: filteredUsers,
-  });
+app.get("/users/123/orders/456 ", (req, res) => {
+  console.log("Url params:", req.params);
+  console.log("Url param ordersId:", req.params.promoId);
+  console.log("Url param usersId:", req.params.usersId);
+  res.json({ result: "ok" });
 });
