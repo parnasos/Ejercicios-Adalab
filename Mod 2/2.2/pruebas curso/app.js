@@ -14,6 +14,26 @@ console.log(SUBTOTAL);
 console.log(3 + "1");*/
 
 /*
+ * Quiero irme de viaje, ¿tengo suficiente dinero?
+ * Sí, me voy de viaje.
+ * Sí, pero tengo un presupuesto ajustado.
+ * No, tengo que seguir ahorrando.
+ */
+/*const flight = 100;
+const hotel = 50;
+const tour = 30;
+const total = flight + hotel + tour;
+const budget = 300;
+
+if (budget > total) {
+    console.log('Sí, me voy de viaje.')
+} else if (budget === total) {
+    console.log('Sí, pero tengo un presupuesto ajustado')
+} else {
+    console.log(' No, tengo que seguir ahorrando.')
+}
+*/
+/*
  * OPERADOR TERNARIO
  * Quiero irme de viaje, ¿tengo suficiente dinero?
  * Sí, me voy de viaje.
