@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Clase sobre DOM</title>
+    <style>
+      #mi_id_de_prueba {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="parrafo">Practicando DOM, revisando apuntes.</p>
+    <script type="text/javascript">
+      //var parrafo = document.getElementById("parrafo");
+      var parrafo = document.getElementsByTagName("p");
+      parrafo[0].id = "mi_id_de_prueba"; //para modoficar el id de p desde el atributo del array.
+      parrafo[0].style.backgroundColor = "gray";
+
+      console.log(parrafo.innerText); //para que aparezca solo el contenido del  Id
+    </script>
+  </body>
+</html>
