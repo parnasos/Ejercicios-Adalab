@@ -1,0 +1,36 @@
+<html>
+  <head> </head>
+  <body>
+    <button id="cambiarfondo">Cambiar fondo</button>
+    <script type="text/javascript">
+      document.addEventListener("keydown", function (evento) {
+        console.log(evento);
+      });
+      var boton = document.getElementById("cambiarfondo");
+      function random(numeroMaximo) {
+        return Math.round(Math.random() * numeroMaximo);
+      }
+      //Evento para cambiar de fondo a cada click, usando el generador de números aleatorios
+      boton.addEventListener("click", function (evento) {
+        console.log(evento);
+        var randomColor = [random(255), random(255), random(255)];
+        document.body.style.backgroundColor =
+          "rgb(" +
+          randomColor[0] +
+          "," +
+          randomColor[1] +
+          "," +
+          randomColor[2] +
+          ")";
+      });
+
+      document.addEventListener("CambiarFondo", function (evento) {
+        console.log(evento);
+        console.log(evento.detail);
+      });
+      var event = new CustomEvent("CambiarFondo", { detail: "hola Lau!" });
+
+      document.dispatchEvent(event);
+    </script>
+  </body>
+</html>
