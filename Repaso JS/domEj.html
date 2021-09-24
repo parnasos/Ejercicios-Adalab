@@ -23,15 +23,25 @@
         "Cocinar para el sábado",
       ];
       var todoList = document.querySelector("#todo_list");
-      for (var i = 0; i < tareas.length; i++) {
-        var tarea = tareas[i];
+
+      function agregarTarea(tarea, id) {
         var li = document.createElement("li");
         li.textContent = tarea;
-        li.id = "elemento_" + i;
+        if (id) {
+          li.id = id;
+        }
         todoList.appendChild(li);
       }
-      var elementoAEleminar = document.getElementById("elemento_2");
-      todoList.removeChild(elementoAEleminar);
+      for (var i = 0; i < tareas.length; i++) {
+        var tarea = tareas[i];
+        agregarTarea(tarea, "elemento_" + i);
+        /*var li = document.createElement("li");
+        li.textContent = tarea;
+        li.id = "elemento_" + i;
+        todoList.appendChild(li);*/
+      }
+      /* var elementoAEleminar = document.getElementById("elemento_2");
+      todoList.removeChild(elementoAEleminar);*/
 
       var agregarBoton = document.getElementById("agregarTarea");
       agregarBoton.addEventListener("click", function () {
