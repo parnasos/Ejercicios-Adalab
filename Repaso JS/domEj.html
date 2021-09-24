@@ -9,6 +9,8 @@
   </head>
   <body>
     <p id="parrafo">Practicando DOM, revisando apuntes.</p>
+    <input type="text" id="todoTitle" />
+    <button id="agregarTarea">Agregar tarea</button>
     <ul id="todo_list"></ul>
 
     <script type="text/javascript">
@@ -30,6 +32,15 @@
       }
       var elementoAEleminar = document.getElementById("elemento_2");
       todoList.removeChild(elementoAEleminar);
+
+      var agregarBoton = document.getElementById("agregarTarea");
+      agregarBoton.addEventListener("click", function () {
+        var todoValue = document.getElementById("todoTitle").value;
+
+        var li = document.createElement("li");
+        li.textContent = todoValue;
+        todoList.appendChild(li);
+      });
     </script>
   </body>
 </html>
